@@ -151,6 +151,96 @@
     }
   }
 }
+
+.prices {
+  margin: 100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    p {
+      width: 50%;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 80px;
+    }
+    .buttons {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        padding: 22px 80px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: black;
+        background: #f7f7fb;
+        line-height: 21px;
+        text-align: center;
+      }
+      button:hover {
+        background: $bg-sy;
+        color: white;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .prices__card {
+      border-radius: 10px;
+      background: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      height: 473px;
+      align-items: center;
+      width: 33%;
+      transition: all 0.4s ease;
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $main-text;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 60px;
+        span {
+          font-size: 28px;
+          line-height: 60px;
+          font-weight: 700;
+        }
+      }
+      button {
+        background: #ffffff;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        color: $bg-sy;
+        padding: 20px 80px;
+        border-radius: 10px;
+      }
+    }
+    .prices__card:hover {
+      transform: scale(1.03);
+      background: #ff7143;
+      button {
+        background: #9f3919;
+      }
+    }
+  }
+}
+
 @media (max-width: 990px) {
   .hero {
     margin-top: 0;
@@ -229,6 +319,21 @@
       width: 50%;
     }
   }
+  .prices {
+    &__content {
+      flex-direction: column;
+      p {
+        width: 100%;
+        font-size: 45px;
+      }
+    }
+    &__cards {
+      flex-wrap: wrap;
+      .prices__card {
+        width: calc(50% - 10px);
+      }
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -260,6 +365,21 @@
       width: calc(50% - 5px);
       img {
         width: 60%;
+      }
+    }
+  }
+  .prices {
+    &__cards {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      .prices__card {
+        width: 80%;
+        h2 {
+          font-size: 50px;
+        }
+        height: auto;
+        padding: 15px 0 15px 0;
       }
     }
   }
