@@ -105,5 +105,11 @@
   }
   .partners {
     margin-top: 160px;
+     .logos {
+      gap: 30px;
+    }
+    .logo_item {
+      width: 80px;
+    }
   }
 }
