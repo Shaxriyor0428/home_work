@@ -86,10 +86,24 @@
   }
   .partners {
     .logos {
-      gap: 10px;
+      gap: 40px;
     }
     .logo_item {
-      width: 80px;
+      width: 120px;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    &__content {
+      .title {
+        font-size: 36px;
+        line-height: 45px;
+      }
+    }
+  }
+  .partners {
+    margin-top: 160px;
   }
 }
