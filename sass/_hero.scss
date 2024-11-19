@@ -35,6 +35,7 @@
 }
 .partners {
   margin-top: 30px;
+  margin-bottom: 60px;
   .logos {
     display: flex;
     gap: 80px;
@@ -47,6 +48,46 @@
     height: auto;
   }
 }
+
+.statistic {
+  margin-bottom: 50px;
+  display: flex;
+  &__image {
+    width: 50%;
+  }
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    .title {
+      font-weight: 700px;
+      font-size: 50px;
+      line-height: 57px;
+    }
+    p {
+      width: 86%;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: $main-text;
+    }
+    a {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      color: #5454d4;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
 
 @media (max-width: 990px) {
   .hero {
@@ -75,6 +116,33 @@
   }
   .partners {
     margin-top: 260px;
+  }
+
+  .statistic {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    &__content {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+      .title {
+        font-size: 45px;
+      }
+      p {
+        width: 50%;
+        font-size: 18px;
+      }
+    }
+    &__image {
+      order: 2;
+      width: 50%;
+    }
   }
 }
 
@@ -105,7 +173,7 @@
 @media (max-width: 500px) {
   .hero {
     &__content {
-    text-align: left;
+      text-align: left;
       .title {
         width: 100%;
         font-size: 36px;
@@ -123,6 +191,27 @@
     }
     .logo_item {
       width: 80px;
+    }
+  }
+
+  .statistic {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      .title {
+        font-size: 32px;
+        line-height: 20px;
+      }
+      p {
+        width: 100%;
+      }
     }
   }
 }
