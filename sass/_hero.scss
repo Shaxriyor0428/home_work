@@ -83,8 +83,16 @@
     &__image {
       height: 450px;
     }
+    &__content {
+      .title {
+        width: 100%;
+        font-size: 45px;
+        line-height: 60px;
+      }
+    }
   }
   .partners {
+    margin-top: 150px;
     .logos {
       gap: 40px;
     }
@@ -103,8 +111,8 @@
         line-height: 40px;
       }
       p {
-      width: 100%;
-    }
+        width: 100%;
+      }
     }
   }
   .partners {
