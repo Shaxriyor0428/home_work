@@ -98,9 +98,13 @@
   .hero {
     &__content {
       .title {
+        width: 100%;
         font-size: 36px;
-        line-height: 45px;
+        line-height: 40px;
       }
+      p {
+      width: 100%;
+    }
     }
   }
   .partners {
