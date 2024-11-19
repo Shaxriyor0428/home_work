@@ -456,4 +456,25 @@
     }
     justify-content: flex-start;
   }
+
+  .prices{
+    &__content{
+      p{
+        font-size: 35px;
+      }
+      .buttons{
+        button{
+          font-size: 12px;
+          padding: 20px 60px;
+        }
+      }
+    }
+    &__cards{
+      .prices__card{
+        h2{
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }
