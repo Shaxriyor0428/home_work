@@ -83,6 +83,9 @@
     &__image {
       height: 450px;
     }
+    .btn {
+      padding: 10px 30px;
+    }
   }
   .partners {
     .logos {
@@ -102,10 +105,13 @@
         line-height: 45px;
       }
     }
+    .btn {
+      padding: 10px 30px;
+    }
   }
   .partners {
     margin-top: 160px;
-     .logos {
+    .logos {
       gap: 30px;
     }
     .logo_item {
