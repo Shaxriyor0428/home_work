@@ -30,7 +30,7 @@
     .navbar {
       .menu__bar {
         display: block;
-        transform: translateX(-100px);
+        transform: translateX(-40px);
       }
       &__collection {
         position: absolute;
@@ -38,7 +38,7 @@
         right: 0;
         width: 40%;
         height: 300px;
-        padding: 30px 50px;
+        padding: 20px 30px;
         flex-direction: column;
         background: rgba(255, 255, 255, 0.947);
         border: 1px solid rgba(0, 0, 0, 0.244);
